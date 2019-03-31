@@ -21,14 +21,18 @@ a:hover {
 
 #main {
     position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+section, .main-title {
     width: 1170px;
     margin: 70px auto 0;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .header {
-    width: 100%;
+    width: 1170px;
+    margin: 70px auto 0;
 }
 
 .header .logo {
@@ -66,15 +70,13 @@ a:hover {
 
 .main-title {
     height: 100vh;
-    padding-top: 150px;
-    padding-right: 135px;
-    padding-left: 135px;
-    padding-bottom: 0;
+    padding: 150px 135px 0;
     color: #ffffff;
     text-align: center;
 }
 
 .main-title .content {
+    width: 900px;
     margin: 0 auto;
     position: relative;
 }
@@ -108,4 +110,257 @@ a:hover {
 
 section.about-event {
     margin-top: -220px;
+}
+
+#section-intro {
+    font-size: 19px;
+    color: #101555;
+}
+
+#section-intro .content {
+    display: table;
+}
+
+#section-intro .lead {
+    display: table-cell;
+    width: 65%;
+    padding-right: 20px;
+    line-height: 30px;
+}
+
+#section-intro .contact {
+    font-size: 15px;
+    display: table-cell;
+    line-height: 30px;
+}
+
+#section-intro .contact strong {
+    color: #101555;
+}
+
+#section-intro .contact address {
+    color: #8a7f83;
+    font-style: normal;
+}
+
+#section-speaker {
+    margin-top: 50px;
+    min-width: 100%;
+    background-color: #F0F1F3;
+}
+
+#section-speaker .content {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    text-transform: uppercase;
+    color: #101555;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#section-speaker .section-content {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-bottom: 100px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#section-speaker .section-content h3 {
+    color: #101555;
+}
+
+#section-speaker .section-content figure {
+    width: 100%;
+}
+
+#section-speaker .section-content figcaption {
+    width: 100%;
+}
+
+#section-speaker .section-content small {
+    color: #8a7f83;
+    font-weight: normal;
+    display: inline-block;
+    width: 100%;
+}
+
+#section-agenda {
+    text-align: center;
+    margin-top: 20px;
+    width: 1170px;
+    clear: both;
+}
+
+#section-agenda .content {
+    height: 100%;
+}
+
+#section-agenda .agenda-part {
+    color: #101555;
+    text-align: left;
+    float: left;
+    width: 33.33%;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+#section-agenda .agenda-part .session {
+    border-left: 1px solid #cacac7;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#section-agenda .agenda-part time {
+    padding: 10px 20px 10px;
+    display: inline-block;
+    color: #787F91;
+    border-bottom: 1px solid #cacac7;
+}
+
+#section-agenda .agenda-part h3 {
+    font-size: 34px;
+}
+
+#section-agenda .agenda-part h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#section-agenda .agenda-part h3, #section-agenda .agenda-part h4 {
+    margin: 20px 0 0 15px;
+    font-weight: normal;
+}
+
+#section-agenda .agenda-part span {
+    text-transform: uppercase;
+    font-weight: normal;
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+}
+
+#section-pricing {
+    min-width: 100%;
+    background-color: #F0F1F3;
+    clear: both;
+}
+
+#section-pricing .content {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding-bottom: 100px;
+}
+
+#section-pricing .section-title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#section-pricing .section-title h2 {
+    margin-bottom: 5px;
+}
+
+#section-pricing .section-title p {
+    color: #787F91;
+    margin-top: 5px;
+    font-size: 20px;
+    text-transform: none;
+}
+
+.pricing-table-default {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.pricing-table-default .pricing-head h3 {
+    background-color: #0D1554;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.pricing-table-default .pricing-head .price {
+    color: #383F59;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.pricing-table-default .pricing-head sup {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pricing-table-default .pricing-detail {
+    color: #383F59;
+}
+
+.pricing-table-default .pricing-detail ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.pricing-table-default .pricing-detail {
+    margin-bottom: 20px;
+}
+
+.pricing-table-default .btn {
+    background-color: #fd367e;
+    padding: 10px 30px;
+}
+
+.pricing-table-default .btn:hover {
+    background-color: white;
+    border-color: #fd367e;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#section-partner {
+    width: 1170px;
+    clear: both;
+    margin-top: 30px;
+}
+
+#section-partner .content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#section-partner .partner {
+    float: left;
+    width: 16.6%;
+}
+
+footer {
+    text-align: center;
+    padding-top: 80px;
+    clear: both;
+    padding-bottom: 40px;
+    color: #787F91;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fd367e;
 }
